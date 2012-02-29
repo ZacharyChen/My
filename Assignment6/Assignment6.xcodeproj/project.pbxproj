@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1516199314FDD964002C1E3B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1516199214FDD964002C1E3B /* SenTestingKit.framework */; };
+		1516199414FDD964002C1E3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158C548914B3560000CB9807 /* UIKit.framework */; };
+		1516199514FDD964002C1E3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158C548B14B3560000CB9807 /* Foundation.framework */; };
+		1516199B14FDD964002C1E3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1516199914FDD964002C1E3B /* InfoPlist.strings */; };
+		1516199E14FDD964002C1E3B /* UnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1516199D14FDD964002C1E3B /* UnitTest.m */; };
+		151619A414FDDCBC002C1E3B /* KKSearchSuggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D943DD14B4266D002C680F /* KKSearchSuggestion.m */; };
 		158C548A14B3560000CB9807 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158C548914B3560000CB9807 /* UIKit.framework */; };
 		158C548C14B3560000CB9807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158C548B14B3560000CB9807 /* Foundation.framework */; };
 		158C548E14B3560000CB9807 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158C548D14B3560000CB9807 /* CoreGraphics.framework */; };
@@ -19,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1516199114FDD964002C1E3B /* UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1516199214FDD964002C1E3B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1516199814FDD964002C1E3B /* UnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
+		1516199A14FDD964002C1E3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1516199C14FDD964002C1E3B /* UnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTest.h; sourceTree = "<group>"; };
+		1516199D14FDD964002C1E3B /* UnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTest.m; sourceTree = "<group>"; };
+		1516199F14FDD964002C1E3B /* UnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTest-Prefix.pch"; sourceTree = "<group>"; };
 		158C548514B3560000CB9807 /* Assignment6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158C548914B3560000CB9807 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		158C548B14B3560000CB9807 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +50,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1516198D14FDD964002C1E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1516199314FDD964002C1E3B /* SenTestingKit.framework in Frameworks */,
+				1516199414FDD964002C1E3B /* UIKit.framework in Frameworks */,
+				1516199514FDD964002C1E3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		158C548214B3560000CB9807 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,10 +73,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1516199614FDD964002C1E3B /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				1516199C14FDD964002C1E3B /* UnitTest.h */,
+				1516199D14FDD964002C1E3B /* UnitTest.m */,
+				1516199714FDD964002C1E3B /* Supporting Files */,
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
+		1516199714FDD964002C1E3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1516199814FDD964002C1E3B /* UnitTest-Info.plist */,
+				1516199914FDD964002C1E3B /* InfoPlist.strings */,
+				1516199F14FDD964002C1E3B /* UnitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		158C547A14B3560000CB9807 = {
 			isa = PBXGroup;
 			children = (
 				158C548F14B3560000CB9807 /* Assignment6 */,
+				1516199614FDD964002C1E3B /* UnitTest */,
 				158C548814B3560000CB9807 /* Frameworks */,
 				158C548614B3560000CB9807 /* Products */,
 			);
@@ -63,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				158C548514B3560000CB9807 /* Assignment6.app */,
+				1516199114FDD964002C1E3B /* UnitTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +118,7 @@
 				158C548914B3560000CB9807 /* UIKit.framework */,
 				158C548B14B3560000CB9807 /* Foundation.framework */,
 				158C548D14B3560000CB9807 /* CoreGraphics.framework */,
+				1516199214FDD964002C1E3B /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,6 +152,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1516199014FDD964002C1E3B /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151619A214FDD964002C1E3B /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				1516198C14FDD964002C1E3B /* Sources */,
+				1516198D14FDD964002C1E3B /* Frameworks */,
+				1516198E14FDD964002C1E3B /* Resources */,
+				1516198F14FDD964002C1E3B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = 1516199114FDD964002C1E3B /* UnitTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		158C548414B3560000CB9807 /* Assignment6 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 158C54A314B3560100CB9807 /* Build configuration list for PBXNativeTarget "Assignment6" */;
@@ -144,11 +208,20 @@
 			projectRoot = "";
 			targets = (
 				158C548414B3560000CB9807 /* Assignment6 */,
+				1516199014FDD964002C1E3B /* UnitTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1516198E14FDD964002C1E3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1516199B14FDD964002C1E3B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		158C548314B3560000CB9807 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,7 +233,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1516198F14FDD964002C1E3B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1516198C14FDD964002C1E3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151619A414FDDCBC002C1E3B /* KKSearchSuggestion.m in Sources */,
+				1516199E14FDD964002C1E3B /* UnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		158C548114B3560000CB9807 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +273,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1516199914FDD964002C1E3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1516199A14FDD964002C1E3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		158C549214B3560100CB9807 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -194,6 +300,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		151619A014FDD964002C1E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTest/UnitTest-Prefix.pch";
+				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		151619A114FDD964002C1E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTest/UnitTest-Prefix.pch";
+				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		158C54A114B3560100CB9807 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -262,6 +400,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		151619A214FDD964002C1E3B /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151619A014FDD964002C1E3B /* Debug */,
+				151619A114FDD964002C1E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		158C547F14B3560000CB9807 /* Build configuration list for PBXProject "Assignment6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
